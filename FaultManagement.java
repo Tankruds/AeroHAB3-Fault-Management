@@ -329,7 +329,7 @@ public class FaultManagement {
 				
 				//if current altitude is greater then our set disconnecting altitude or
 				//if the elapsed time is greater than our set time to disconnect then we will disconnect.
-				if ((altitude >= altitudeToDisconnect && altitudeToDisconnect != 0) || (elapsedTime >= timeToDisconnect && timeToDisconnect != 0) && !disconnected) {
+				if (((altitude >= altitudeToDisconnect && altitudeToDisconnect != 0) || (elapsedTime >= timeToDisconnect && timeToDisconnect != 0)) && !disconnected) {
 					System.out.println("Disconnect");
 					disconnect();
 				}
